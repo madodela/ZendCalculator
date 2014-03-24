@@ -72,87 +72,35 @@ $(function() {
 
     });
 
-    $('#btn1').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(1);
-    });
+    $('#btn1').click(buttonFunction(1));
 
-    $('#btn2').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(2);
-    });
+    $('#btn2').click(buttonFunction(2));
 
-    $('#btn3').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(3);
-    });
+    $('#btn3').click(buttonFunction(3));
 
-    $('#btn4').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(4);
-    });
+    $('#btn4').click(buttonFunction(4));
 
-    $('#btn5').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(5);
-    });
+    $('#btn5').click(buttonFunction(5));
 
-    $('#btn6').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(6);
-    });
+    $('#btn6').click(buttonFunction(6));
 
-    $('#btn7').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(7);
-    });
+    $('#btn7').click(buttonFunction(7));
 
-    $('#btn8').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(8);
-    });
+    $('#btn8').click(buttonFunction(8));
 
-    $('#btn9').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(9);
-    });
+    $('#btn9').click(buttonFunction(9));
 
-    $('#btn0').click(function() {
-        if (enterSomeNumbers) {
-            cleanInput();
-            enterSomeNumbers = false;
-        }
-        addNumber(0);
-    });
+    $('#btn0').click(buttonFunction(0));
 
-
+    function buttonFunction(n) {
+        $('#btn' + n).click(function() {
+            if (enterSomeNumbers) {
+                cleanInput();
+                enterSomeNumbers = false;
+            }
+            addNumber(n);
+        });
+    }
 
     $('#equalBtn').click(function() {
         equal = true;
